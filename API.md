@@ -11,16 +11,16 @@
 #### Response
 ```JSON
 {
-    "devices": [
-        {
-            "id": 1,
-            "name": "Ceiling Light",
-        },
-        {
-            "id": 2,
-            "name": "Desk Lamp"
-        }
-    ]
+  "devices": [
+    {
+      "id": 1,
+      "name": "Ceiling Light",
+    },
+    {
+      "id": 2,
+      "name": "Desk Lamp"
+    }
+  ]
 }
 ```
 
@@ -28,21 +28,21 @@
 #### Response
 ```JSON
 {
-    "device": {
-        "id": 1,
-        "name": "Ceiling Light",
-        "features": [
-            {
-                "name": "state",
-                "type": "enum",
-                "value": 0,
-                "values": {
-                    "Off": 0,
-                    "On": 1
-                }
-            }
-        ]
-    }
+  "device": {
+    "id": 1,
+    "name": "Ceiling Light",
+    "features": [
+      {
+        "name": "state",
+        "type": "enum",
+        "value": 0,
+        "values": {
+          "Off": 0,
+          "On": 1
+        }
+      }
+    ]
+  }
 }
 ```
 
@@ -57,36 +57,36 @@ Status code will be 404.
 #### Request
 ```JSON
 {
-    "device": {
-        "id": 1,
-        "features": [
-            {
-                "name": "state",
-                "value": 1
-            }
-        ]
-    }
+  "device": {
+    "id": 1,
+    "features": [
+      {
+        "name": "state",
+        "value": 1
+      }
+    ]
+  }
 }
 ```
 
 #### Response
 ```JSON
 {
-    "device": {
-        "id": 1,
-        "name": "Ceiling Light",
-        "features": [
-            {
-                "name": "state",
-                "type": "enum",
-                "value": 1,
-                "values": {
-                    "Off": 0,
-                    "On": 1
-                }
-            }
-        ]
-    }
+  "device": {
+    "id": 1,
+    "name": "Ceiling Light",
+    "features": [
+      {
+        "name": "state",
+        "type": "enum",
+        "value": 1,
+        "values": {
+          "Off": 0,
+          "On": 1
+        }
+      }
+    ]
+  }
 }
 ```
 

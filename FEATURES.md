@@ -12,12 +12,12 @@ Any enum type features must also include `value` and `values` fields.
 
 ```JSON
 {
-    "name": "state",
-    "type": "enum",
-    "value": 0,
-    "values": {
-        "Off": 0,
-        "On": 1
-    }
+  "name": "state",
+  "type": "enum",
+  "value": 0,
+  "values": {
+    "Off": 0,
+    "On": 1
+  }
 }
 ```
