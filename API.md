@@ -55,10 +55,13 @@ HTTP/1.1 404 Not Found
 Status code will be 404.
 
 ## PUT `/devices/1`
+PUT can be used to update features or even the name of a device.
+
 #### Request
 ```JSON
 {
   "device": {
+    "name": "Wall Light",
     "features": [
       {
         "name": "state",
@@ -74,7 +77,7 @@ Status code will be 404.
 {
   "device": {
     "id": 1,
-    "name": "Ceiling Light",
+    "name": "Wall Light",
     "features": [
       {
         "name": "state",
