@@ -94,3 +94,28 @@ PUT can be used to update features or even the name of a device.
 ```
 
 Same response as [GET `/devices/1`](#get-devices1) with updated values.
+
+## PUT `/devices/99`
+#### Request
+```JSON
+{
+  "device": {
+    "name": "Wall Light",
+    "features": [
+      {
+        "name": "state",
+        "value": 1
+      }
+    ]
+  }
+}
+```
+
+#### Response
+```
+HTTP/1.1 404 Not Found
+```
+
+Status code will be 404.
+
+Same response as [GET `/devices/99`](#get-devices99) (an invalid device).
