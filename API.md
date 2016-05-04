@@ -51,6 +51,7 @@
 ```
 HTTP/1.1 404 Not Found
 ```
+
 Status code will be 404.
 
 ## POST `/devices/1`
