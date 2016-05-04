@@ -5,7 +5,7 @@
 |--------------|--------------|-------------------------------|
 | GET          | `/devices`   | A list of all devices.        |
 | GET          | `/devices/1` | Information about device 1.   |
-| POST         | `/devices/1` | Sets properties for device 1. |
+| PUT          | `/devices/1` | Sets properties for device 1. |
 
 ## GET `/devices`
 #### Response
@@ -54,7 +54,7 @@ HTTP/1.1 404 Not Found
 
 Status code will be 404.
 
-## POST `/devices/1`
+## PUT `/devices/1`
 #### Request
 ```JSON
 {
