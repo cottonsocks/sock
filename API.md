@@ -59,7 +59,6 @@ Status code will be 404.
 ```JSON
 {
   "device": {
-    "id": 1,
     "features": [
       {
         "name": "state",
